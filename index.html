@@ -10,6 +10,14 @@
 <p>This is the home page. The OG. </p>
 
 <a href="about.html">link to the about page</a>
+<p>          </p>
 
+<button onclick="changeDate()">Click to get current date</button>
+<p id="output"></p>
+
+<script>
+    const d = new Date();
+    document.getElementById("output").innerHTML = d;
+    </script>
 </body>
 </html>
