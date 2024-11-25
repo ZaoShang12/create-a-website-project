@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<link rel="stylesheet" href="aesthetic.css">
 </head>
 <body>
 
@@ -12,12 +12,23 @@
 <a href="about.html">link to the about page</a>
 <p>          </p>
 
-<button onclick="changeDate()">Click to get current date</button>
-<p id="output"></p>
 
-<script>
-    const d = new Date();
-    document.getElementById("output").innerHTML = d;
+    <button id="updateDateButton">Update Date</button>
+
+    <div id="dateDisplay">Current Date: </div>
+
+    <script>
+       
+         // Function to update the date
+ function updateDate() {
+    const dateDisplay = document.getElementById('dateDisplay');
+    const currentDate = new Date(); // Get the current date and time
+    dateDisplay.textContent = `Current Date: ${currentDate.toLocaleString()}`;
+}
+        // Add event listener to the button
+        const button = document.getElementById('updateDateButton');
+        button.addEventListener('click', updateDate);
     </script>
+    
 </body>
 </html>
