@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+}
+
+h1 {
+    color: blue;
+    font-family: 'Dancing Script', cursive;
+}
+.updateDateButton {
+    color: gray;
+    font-family: 'Times New Roman', sans-serif;
+}
+.container {
+    display: grid;
+    place-items: center; 
+}
+.dateDisplay {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: large;
+}
